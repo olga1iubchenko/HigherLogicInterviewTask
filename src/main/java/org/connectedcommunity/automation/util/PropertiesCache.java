@@ -1,9 +1,10 @@
 package org.connectedcommunity.automation.util;
 
-        import java.io.IOException;
-        import java.io.InputStream;
-        import java.util.Properties;
-        import java.util.Set;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
+import java.util.Set;
 
 public class PropertiesCache {
     private final Properties configProp = new Properties();
@@ -15,7 +16,7 @@ public class PropertiesCache {
         try {
             configProp.load(in);
         } catch (IOException e) {
-            System.out.println("Cann't read all properties from file. Exception: " + e);
+            System.out.println("Can not  read all properties from file. Exception: " + e);
         }
     }
 

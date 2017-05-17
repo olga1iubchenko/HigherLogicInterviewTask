@@ -24,6 +24,11 @@ public class HomePageUserLoggedIn extends AbstractPage{
             PageFactory.initElements(driver, this);
         }
 
+        @Step("Get user view label")
+        public WebElement getUserViewLabel(){
+            return qaUserViewLabel;
+        }
+
         @Step("Click on Show Profile Button")
         public void clickOnShowProfileButton(String email){
             showProfileButton.click();
