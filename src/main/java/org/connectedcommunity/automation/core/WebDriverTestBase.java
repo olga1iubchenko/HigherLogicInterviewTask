@@ -17,6 +17,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
 
@@ -32,7 +33,7 @@ public abstract class WebDriverTestBase {
     private static final String SCRIPT_TIMEOUT = "webdriver.script.timeout";
     private static final String LOAD_TIMEOUT = "webdriver.load.timeout";
     private static final String OS = "win";
-    private static final String BROWSER = "firefox";
+   private static final String BROWSER =  System.getProperty("browser");
 
 
     protected WebDriver driver;
@@ -107,5 +108,4 @@ public abstract class WebDriverTestBase {
         }
         return path;
     }
-
 }

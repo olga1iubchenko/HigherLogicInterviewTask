@@ -21,16 +21,16 @@ public class UserProfilePage extends AbstractPage{
     @FindBy(how = How.XPATH, using = ".//*[@id='Welcome_Details_CompleteBarProgress_0']/div[@class='progress']")
     WebElement progressBar;
 
-    @FindBy(how = How.ID, using = "'Welcome_Details_profileLink1_0")
+    @FindBy(how = How.ID, using = "Welcome_Details_profileLink1_0")
     WebElement profileDetailsLink;
 
-    @FindBy(how = How.ID, using = "'Welcome_Details_profileLink1_0")
+    @FindBy(how = How.ID, using = "Welcome_Details_communitiesLink_0")
     WebElement communitiesLinkButton;
 
     @FindBy(how = How.ID, using = "Welcome_Details_MessagesCount_0")
     WebElement inboxMailLinkButton;
 
-    @FindBy(how = How.ID, using = "Welcome_Details_MessagesCount_0")
+    @FindBy(how = How.ID, using = "Welcome_Details_logoutLink_0")
     WebElement logoutButton;
 
     public UserProfilePage(WebDriver driver){

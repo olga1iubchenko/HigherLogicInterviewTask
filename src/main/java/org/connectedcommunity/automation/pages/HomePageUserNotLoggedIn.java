@@ -26,4 +26,9 @@ public class HomePageUserNotLoggedIn extends AbstractPage{
         return new LoginWindowPage(driver);
     }
 
+    @Step("Get SignIn button")
+    public WebElement getSignInButton(){
+        return signInButton;
+    }
+
 }

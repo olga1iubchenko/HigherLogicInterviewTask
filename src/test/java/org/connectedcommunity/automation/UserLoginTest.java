@@ -19,8 +19,8 @@ public class UserLoginTest extends WebDriverTestBase {
 
     private String applicationURL = "https://automation.connectedcommunity.org/home";
     private String userLogin = "qa@higherlogic.test";
-    private String password = "qa";
-    private String qaUserView = "QA user View.";
+    private String userPassword = "qa";
+    private String qaUserView = "QA user View.  ";
 
     @Test
     public void testUserLoginWithValidInput(){
@@ -30,7 +30,7 @@ public class UserLoginTest extends WebDriverTestBase {
 
         LoginWindowPage loginWindowPage = new LoginWindowPage(driver);
         loginWindowPage.fillEmailAddressField(userLogin);
-        loginWindowPage.fillPasswordFiled(password);
+        loginWindowPage.fillPasswordFiled(userPassword);
         loginWindowPage.clickOnLoginButton();
 
         HomePageUserLoggedIn homePageUserLoggedIn = new HomePageUserLoggedIn(driver);

@@ -30,7 +30,7 @@ public class HomePageUserLoggedIn extends AbstractPage{
         }
 
         @Step("Click on Show Profile Button")
-        public void clickOnShowProfileButton(String email){
+        public void clickOnShowProfileButton(){
             showProfileButton.click();
         }
 }

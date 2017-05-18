@@ -19,7 +19,6 @@
         <maven.surefire.plugin>2.18.1</maven.surefire.plugin>
         <maven.compiler.plugin>1.8</maven.compiler.plugin>
         <jetty-maven-plugin>9.2.10.v20150310</jetty-maven-plugin>
-
     </properties>
 
     <dependencies>
@@ -33,16 +32,11 @@
           <artifactId>testng</artifactId>
           <version>${testNG.version}</version>
        </dependency>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>3.5</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>3.5</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.apache.commons</groupId>-->
+            <!--<artifactId>commons-lang3</artifactId>-->
+            <!--<version>3.5</version>-->
+        <!--</dependency>-->
 
         <!-- Allure testng adaptor -->
         <dependency>
@@ -56,12 +50,6 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>6.11</version>
-        </dependency>
-
     </dependencies>
 
     <build>
